@@ -88,9 +88,102 @@
                         </a>
                     </footer>
             </div>
-            <a href="javascript:;">link</a>
-            <a class="download" href="#">DOWNLOAD RESUME</a>
-            <p>Hello! I’m Wenchao. Senior Web Developer specializing in front end development. </p>
+            <p class="downloadResume-wrapper">
+                <a class="downloadResume" href="./resume.pdf" target="_blank" download="">DOWNLOAD RESUME</a>              
+            </p>
+ 
+            <p class="selfIntrodution">Hello! I'm Wenchao. Senior Web Developer specializing in front end development.Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations. </p>
         </main>
+        <section class="skills">
+                <h2>Professional Skills</h2>
+                <ol class="clearfix">
+                  <li>
+                    <h3>
+                      HTML 5 &amp; CSS 3
+                    </h3>
+                    <div class="progressBar">
+                      <div class="progress" style="width: 10%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>
+                      JavaScript
+                    </h3>
+                    <div class="progressBar">
+                      <div class="progress" style="width: 20%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>
+                      jQuery
+                    </h3>
+                    <div class="progressBar">
+                      <div class="progress" style="width: 30%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>
+                      Vue.js
+                    </h3>
+                    <div class="progressBar">
+                      <div class="progress" style="width: 40%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>
+                      React.js
+                    </h3>
+                    <div class="progressBar">
+                      <div class="progress"  style="width: 50%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h3>
+                      Node.js
+                    </h3>
+                    <div class="progressBar">
+                      <div class="progress"  style="width: 60%"></div>
+                    </div>
+                  </li>
+                </ol>
+        </section>
+        <section class="portfolio">
+                <h2>Portfolio</h2>
+                <nav>
+                  <ol class="clearfix">
+                    <li id="portfolio1">ALL</li>
+                    <li id="portfolio2">FRAMEWORK</li>
+                    <li id="portfolio3">JAVASCRIPT&amp;CSS</li>
+                  </ol>
+                  <div id="portfolioBar" class="bar state-1">
+                    <div class="bar-inner"></div>
+                  </div>
+                </nav>
+                <script>
+                  portfolio1.onclick= function(){
+                    portfolioBar.className = 'bar state-1'
+                  }
+                  portfolio2.onclick= function(){
+                    portfolioBar.className = 'bar state-2'
+                  }
+                  portfolio3.onclick= function(){
+                    portfolioBar.className = 'bar state-3'
+                  }
+                </script>
+            
+            
+                <div class="works" style="height: 576px;">
+                  <div class="big" style="top: 0; left: 0;">
+                    <img src="./img/1.jpg" alt="作品1">
+                  </div>
+                  <div class="small" style="top: 0; left: 645px;">
+                    <img src="./img/2.jpg" alt="作品2">
+                  </div>
+                  <div class="small" style="top: 299px; left: 645px;">
+                    <img src="./img/3.jpg" alt="作品3">
+                  </div>
+                </div>
+            
+        </section>
     </body>
 </html>
